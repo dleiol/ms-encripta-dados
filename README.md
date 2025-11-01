@@ -1,6 +1,6 @@
 # API de Encriptação Simples
 
-API para encriptar e decriptar dados usando Node.js e Express.
+API para encriptar e decriptar dados usando Node.js e Express, deployada na Vercel.
 
 ## Instalação
 
@@ -8,7 +8,7 @@ API para encriptar e decriptar dados usando Node.js e Express.
 npm install
 ```
 
-## Execução
+## Execução Local
 
 ```bash
 npm start
@@ -66,14 +66,28 @@ Verifica se a API está funcionando.
 
 ## Exemplo de Uso
 
+### Localmente
+
 ```bash
 # Encriptar
-curl -X POST http://localhost:3000/encriptar \
+curl -X POST http://localhost:2611/encriptar \
   -H "Content-Type: application/json" \
   -d "{\"texto\": \"Olá mundo!\"}"
 
 # Decriptar
-curl -X POST http://localhost:3000/decriptar \
+curl -X POST http://localhost:2611/decriptar \
   -H "Content-Type: application/json" \
   -d "{\"texto_encriptado\": \"abc123...\"}"
+```
+
+### Na Vercel
+
+```bash
+# Encriptar
+curl -X POST https://ms-encripta-dados.vercel.app/api/encriptar \
+  -H "Content-Type: application/json" \
+  -d "{\"texto\": \"Olá mundo!\"}"
+
+# Health Check
+curl https://ms-encripta-dados.vercel.app/api/health
 ```
