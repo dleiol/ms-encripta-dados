@@ -15,6 +15,7 @@ npm start
 ```
 
 A API estará rodando em `https://ms-encripta-dados.vercel.app`
+
 Local: http://localhost:2611
 
 ## Endpoints
