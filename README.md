@@ -1,4 +1,4 @@
-# API de Encriptação Simples
+# API de Encriptação e Decriptação
 
 API para encriptar e decriptar dados usando Node.js e Express, deployada na Vercel.
 
